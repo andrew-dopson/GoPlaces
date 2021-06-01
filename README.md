@@ -1,1 +1,1 @@
-# GoPlaces
+# GoPlacesAPI
