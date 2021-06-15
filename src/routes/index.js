@@ -1,7 +1,10 @@
 import express from 'express';
-import { indexPage } from '../controllers';
+import poi from './poi';
+
 const indexRouter = express.Router();
 
-indexRouter.get('/', indexPage);
+indexRouter.get('/', (req, res) => res.status(200).json({ message: 'Hello' }));
+
+indexRouter.use('/poi', poi);
 
 export default indexRouter;
